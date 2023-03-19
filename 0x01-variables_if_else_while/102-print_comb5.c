@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * mainn - combo of 4
+ * main - combo of 4
  *
  * Return: Aways 0
  */
@@ -27,6 +27,6 @@ int main(void)
 			}
 		}
 	}
-        putchar('\n');
+	putchar('\n');
 	return (0);
 }

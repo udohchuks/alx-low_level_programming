@@ -1,18 +1,11 @@
-#include <unistd.h>
 #include "main.h"
 /**
- * print_alphabet - print the alphabet
+ * main - check the code
  *
- * Return: the letters of the alphabet
+ * Return: Always 0.
  */
-
-void print_alphabet(void)
+int main(void)
 {
-	int i;
-
-	for (i = 0; i < 26 ; i++)
-	{
-		_putchar(97 + i);
-	}
-	_putchar('\n');
+	print_alphabet();
+	return (0);
 }

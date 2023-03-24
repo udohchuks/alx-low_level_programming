@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "main.h"
-/*
+/**
  * _isupper - uppercase
  * @c: character
- * Return: 1 , 0
+ * Return: 1 0
  */
 int _isupper(int c)
 {

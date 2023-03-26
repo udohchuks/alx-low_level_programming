@@ -13,7 +13,7 @@ int main(void)
 	y = 2;
 	n = 50;
 	printf("%ld, %ld, ", x, y);
-	while (n >= 1)
+	while (n > 2)
 	{
 		z = x + y;
 		printf("%ld, ", z);

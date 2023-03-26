@@ -24,7 +24,7 @@ int main(void)
 		y = z;
 		n -= 1;
 	}
-	printf("%ld", sum);
+	printf("%d", n);
 	printf("\n");
 	return (0);
 }

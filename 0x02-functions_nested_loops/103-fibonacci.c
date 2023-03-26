@@ -5,25 +5,28 @@
  */
 int main(void)
 {
-	long int x, y, z;
+	long int x, y, z, sum;
 
 	int n;
 
-	x = 1;
-	y = 2;
+	x = 0;
+	y = 1;
 	n = 50;
-	printf("%ld, %ld", x, y);
 	while (n > 1)
 	{
+		if (z > 4000001)
+		{
+			break;
+		}
 		z = x + y;
 		if (z % 2 == 0)
 		{
-			printf(", %ld", z);
+			sum += z;
 		}
 		x = y;
 		y = z;
 		n -= 1;
 	}
-	printf("\n");
+	printf("%ld\n", sum);
 	return (0);
 }

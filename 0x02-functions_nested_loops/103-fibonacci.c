@@ -13,6 +13,7 @@ int main(void)
 	sum = 0;
 	y = 1;
 	n = 50;
+	z = 0;
 	while (z < 4000001)
 	{
 		z = x + y;
@@ -24,7 +25,7 @@ int main(void)
 		y = z;
 		n -= 1;
 	}
-	printf("%d", n);
+	printf("%ld", sum);
 	printf("\n");
 	return (0);
 }

@@ -28,6 +28,7 @@ int main(void)
 		y = z;
 		n -= 1;
 	}
-	printf("%ld\n", sum);
+	printf("%ld", sum);
+	printf("\n");
 	return (0);
 }

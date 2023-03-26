@@ -10,6 +10,7 @@ int main(void)
 	int n;
 
 	x = 0;
+	sum = 0;
 	y = 1;
 	n = 50;
 	while (n > 1)

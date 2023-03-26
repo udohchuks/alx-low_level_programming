@@ -12,14 +12,15 @@ int main(void)
 	x = 1;
 	y = 2;
 	n = 50;
-	printf("%ld, %ld, ", x, y);
+	printf("%ld, %ld", x, y);
 	while (n > 2)
 	{
 		z = x + y;
-		printf("%ld, ", z);
+		printf(", %ld", z);
 		x = y;
 		y = z;
 		n -= 1;
 	}
+	printf("\n");
 	return (0);
 }

@@ -13,12 +13,8 @@ int main(void)
 	sum = 0;
 	y = 1;
 	n = 50;
-	while (n > 1)
+	while (z < 4000001)
 	{
-		if (z > 4000001)
-		{
-			break;
-		}
 		z = x + y;
 		if (z % 2 == 0)
 		{

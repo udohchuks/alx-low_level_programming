@@ -14,7 +14,7 @@ int root(int n, int x)
 	}
 	else if (x *  x < n)
 	{
-		return(root(n, x + 1));
+		return (root(n, x + 1));
 	}
 	else
 	{

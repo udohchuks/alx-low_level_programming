@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i, value;
-	long int prod;
+	unsigned int prod;
 
 	if (argc > 1)
 	{

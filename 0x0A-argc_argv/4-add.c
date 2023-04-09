@@ -25,18 +25,11 @@ int main(int argc, char *argv[])
 			if (!value)
 			{
 				printf("Error\n");
-				break;
+				return (1);
 			}
 			add += value;
 		}
 		printf("%d\n", add);
-		if (value == 0)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
 	}
+	return (0);
 }

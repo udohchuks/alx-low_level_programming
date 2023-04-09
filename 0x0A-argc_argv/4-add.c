@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	unsigned int add, value;
 
 	add = 0;
-	if (argc == 1)
+	if (argc < 2)
 	{
 		printf("%d\n", add);
 		return (0);
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			value = atoi(argv[i]);
+			value = strtol(argv[i], NULL, 10);
 			if (!value)
 			{
 				printf("Error\n");

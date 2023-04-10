@@ -24,9 +24,23 @@ int main(int argc, char *argv[])
 		{
 			printf("0\n");
 		}
+		else if (value >= 100)
+		{
+			cent = ((value % 25) + (value / 25));
+			printf("%d\n", cent);
+		}
+		else if (value > 10)
+		{
+			cent = (value % 10);
+			printf("%d\n", cent);
+		}
+		else if (value < 10)
+		{
+			printf("%d\n", value);
+		}
 		else
 		{
-			cent = ((value % 10) + (value / 10));
+			cent = value / 10;
 			printf("%d\n", cent);
 		}
 		return (0);

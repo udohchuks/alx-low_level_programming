@@ -1,7 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
-
+/**
+ * length - length
+ * @value: value
+ * @num: num
+ * @i: i
+ * Return: i
+ */
+unsigned long int length(int value, int num, unsigned long int i)
+{
+	if (value < 10)
+	{
+		return (i);
+	}
+	else
+	{
+		return (length(value, num * 10, i + 1));
+	}
+}
 /**
  * main - entry level
  * @argc: arg count
@@ -25,6 +43,11 @@ int main(int argc, char *argv[])
 		{
 			value = strtol(argv[i], NULL, 10);
 			if (!value)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			if (strlen(argv[i]) != length(value, 10, 1))
 			{
 				printf("Error\n");
 				return (1);

@@ -11,7 +11,7 @@
  */
 unsigned long int length(int value, int num, unsigned long int i)
 {
-	if (value < 10)
+	if (value < num)
 	{
 		return (i);
 	}

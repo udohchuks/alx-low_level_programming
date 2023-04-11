@@ -20,6 +20,10 @@ char *str_concat(char *s1, char *s2)
 	}
 	length = strlen(s1) + strlen(s2);
 	str = malloc(sizeof(char) * length + 1);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	strcat(str, s1);
 	strcat(str, s2);
 	str[length + 1] = '\0';

@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * string_nconcat - string catenate
  * @s1: string 1
@@ -8,8 +9,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len2, j;
-	int i, len1, length;
+	unsigned int len2;
+	int len1, length;
 	char *str;
 
 	if (s1 == NULL)
@@ -24,24 +25,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < len1; i++)
-	{
-		str[i] = s1[i];
-	}
+	strcat(str,s1);
 	if (n >= len2)
 	{
-		for (j = 0; j < len2; j++)
-		{
-			str[i + j] = s2[j];
-		}
+		strcat(str,s2);
 	}
 	else
 	{
-		for (j = 0; j < n; j++)
-		{
-			str[i + j] = s2[j];
-		}
+		strncat(str,s2,n);
 	}
-	str[length] = '\0';
 	return (str);
 }

@@ -25,14 +25,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	strcat(str,s1);
+	strcat(str, s1);
 	if (n >= len2)
 	{
-		strcat(str,s2);
+		strcat(str, s2);
 	}
 	else
 	{
-		strncat(str,s2,n);
+		strncat(str, s2, n);
 	}
 	return (str);
 }

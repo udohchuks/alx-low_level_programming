@@ -60,9 +60,9 @@ void print_all(const char * const format, ...)
 		{'\0', NULL}
 	};
 	int i, j;
-	char *sp, *sp2;
+	char *sp1, *sp2;
 
-	sp = "", sp2 = ", ";
+	sp1 = "", sp2 = ", ";
 	i = 0;
 	while (format_attr[i].f != NULL && format[i] != '\0')
 	{
@@ -71,7 +71,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == format_attr[j].c)
 			{
-				printf("%s", sp);
+				printf("%s", sp1);
 				format_attr[j].f(ptr);
 				sp1 = sp2;
 			}

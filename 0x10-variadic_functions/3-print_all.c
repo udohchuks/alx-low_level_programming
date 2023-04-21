@@ -49,9 +49,6 @@ void func_str(va_list ptr)
  */
 void print_all(const char * const format, ...)
 {
-	va_list ptr;
-
-	va_start(ptr, format);
 	form format_attr[5] = {
 		{'c', func_char},
 		{'i', func_int},
@@ -62,6 +59,8 @@ void print_all(const char * const format, ...)
 	int i, j;
 	char *sp1, *sp2;
 
+	va_list ptr;
+	va_start(ptr, format);
 	sp1 = "", sp2 = ", ";
 	i = 0;
 	while (format_attr[i].f != NULL && format[i] != '\0')

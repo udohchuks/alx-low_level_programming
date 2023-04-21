@@ -60,7 +60,7 @@ void print_all(const char * const format, ...)
 		{'\0', NULL}
 	};
 	int i, j;
-	char *sp1, *sp2;
+	char *sp, *sp2;
 
 	sp = "", sp2 = ", ";
 	i = 0;

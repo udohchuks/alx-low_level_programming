@@ -58,8 +58,8 @@ void print_all(const char * const format, ...)
 	};
 	int i, j;
 	char *sp1, *sp2;
-
 	va_list ptr;
+
 	va_start(ptr, format);
 	sp1 = "", sp2 = ", ";
 	i = 0;

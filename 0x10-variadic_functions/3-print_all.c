@@ -40,8 +40,7 @@ void func_str(va_list ptr)
 	str = va_arg(ptr, char*);
 	if (str == NULL)
 		printf("(nil)");
-	else
-		printf("%s", str);
+	printf("%s", str);
 }
 /**
  * func_format: pointer to functions

@@ -65,7 +65,7 @@ void print_all(const char * const format, ...)
 	va_start(ptr, format);
 	sp1 = "", sp2 = ", ";
 	i = 0;
-	while (format_attr[i].f != NULL && format[i] != '\0')
+	while (format != NULL && format_attr[i].f != NULL && format[i] != '\0')
 	{
 		j = 0;
 		while (format_attr[j].c != '\0')

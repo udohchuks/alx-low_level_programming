@@ -5,10 +5,11 @@
 
 int _putchar(char c);
 /**
- * list_ts - struct node
+ * struct list_ts - struct node
  * @str: string
  * @len: length of string
  * @next: pointer to next node
+ * Description: create a node
  */
 typedef struct list_ts
 {

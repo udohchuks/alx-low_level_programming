@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
- * add_node: adds node
+ * add_node - function that adds new node at the beginning of a list_t.
  * @head: head of list
  * @str: string
+ * Return: address of new node
  */
 list_t *add_node(list_t **head, const char *str)
 {

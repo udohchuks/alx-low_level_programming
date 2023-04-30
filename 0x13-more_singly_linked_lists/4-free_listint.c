@@ -1,16 +1,16 @@
 #include "lists.h"
 /**
- * free_listint
+ * free_listint - free memory
  * @head: pointer to head
  */
 void free_listint(listint_t *head)
 {
 	listint_t *ptr;
-
-	ptr = head;
-	while (ptr != NULL)
+	while (head != NULL)
 	{
+		ptr = head;
+		head = head->next;
 		free(ptr);
-		ptr = ptr->next;
 	}
+	free(head);
 }

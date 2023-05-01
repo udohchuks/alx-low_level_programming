@@ -7,8 +7,8 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t ptr1, ptr2;
-	unsigned int i, size = 0;
+	listint_t *ptr1, *ptr2;
+	unsigned int i = 1, size = 0;
 
 
 	if (*head == NULL)
@@ -17,28 +17,27 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	while (ptr1 != NULL)
 	{
 		size++;
-		ptr1 += ptr->next;
-	}
-	if (index < 0 || index > size)
-		return (-1);
-	if ((*head)->next == NULL)
-	{
-		free(*head);
-		return (1);
-	}
-	if (index == 0)
-	{
-		pop_listint(head);
+		ptr1 = ptr1->next;
 	}
 	ptr1 = *head;
 	ptr2 = (*head)->next;
+	if (index > size)
+		return (-1);
+	if (index == 0)
+	{
+		*head = ptr1->next;
+		free(ptr1);
+		ptr1 = NULL;
+		return (1);
+	}
 	while (i < index)
 	{
 		ptr1 = ptr2;
+		ptr2 = ptr2->next;
 		i++;
 	}
 	ptr1->next = ptr2->next;
-	free(ptr1);
+	free(ptr2);
+	ptr2 = NULL;
 	return (1);
-
-
+}
